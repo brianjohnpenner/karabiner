@@ -2339,7 +2339,25 @@
             ]
           }
         ]
-      }
+      },
+      "devices": [
+        {
+          "identifiers": {
+            "is_game_pad": true,
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 32778,
+            "vendor_id": 10730
+          },
+          "ignore": false,
+          "simple_modifications": {
+            "left_command": "left_option",
+            "left_option": "left_command",
+            "right_command": "right_option",
+            "right_option": "right_command"
+          }
+        }
+      ]
     }
   ]
 }
