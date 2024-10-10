@@ -1,20 +1,17 @@
 {
   "global": {
-    "show_in_menu_bar": true
+    "show_in_menu_bar": false
   },
   "profiles": [
     {
       "name": "Default",
-      "virtual_hid_keyboard": {
-        "keyboard_type_v2": "ansi"
-      },
       "complex_modifications": {
         "rules": [
           {
             "description": "Hyper Key (⌃⌥⇧⌘)",
             "manipulators": [
               {
-                "description": "Caps Lock -> Hyper Key,",
+                "description": "Caps Lock -> Hyper Key",
                 "from": {
                   "key_code": "caps_lock",
                   "modifiers": {
@@ -82,11 +79,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
                     "value": 0
                   },
                   {
@@ -301,11 +293,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
                     "value": 0
                   },
                   {
@@ -775,75 +762,6 @@
             ]
           },
           {
-            "description": "Hyper Key + t",
-            "manipulators": [
-              {
-                "to": [
-                  {
-                    "shell_command": "~/.kit/kar clockify-timer"
-                  }
-                ],
-                "description": "          ~/.kit/kar clockify-timer",
-                "type": "basic",
-                "from": {
-                  "key_code": "t",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_v",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 0
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "description": "Hyper Key sublayer \"w\"",
             "manipulators": [
               {
@@ -882,11 +800,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
                     "value": 0
                   },
                   {
@@ -1292,11 +1205,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_w",
                     "value": 0
                   },
@@ -1654,11 +1562,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_w",
                     "value": 0
                   },
@@ -1946,11 +1849,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_t",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_w",
                     "value": 0
                   },
@@ -2086,11 +1984,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_o",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_t",
                     "value": 0
                   },
                   {
